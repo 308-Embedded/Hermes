@@ -1,3 +1,3 @@
-set(CurrentPkg "CommonPkg" CACHE STRING "Current package name" FORCE)
+set(CurrentPkg "CommonPkg")
 
 add_subdirectory(dummy)
