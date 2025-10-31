@@ -15,11 +15,25 @@
       }
     },
     {
-      "name": "release",
+      "name": "aarch64-release",
       "generator": "Ninja",
-      "binaryDir": "${sourceDir}/build/release",
+      "binaryDir": "${sourceDir}/build/aarch64-release",
+      "toolchainFile": "cmake/toolchain.cmake",
       "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Release"
+        "CMAKE_BUILD_TYPE": "Release",
+        "TARGET_ARCH":"aarch64-unknown-linux-gnu",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "YES"
+      }
+    },
+    {
+      "name": "x86_64-release",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/x86_64-release",
+      "toolchainFile": "cmake/toolchain.cmake",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "TARGET_ARCH":"x86_64-unknown-linux-gnu",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "YES"
       }
     }
   ]
