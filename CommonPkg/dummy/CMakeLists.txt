@@ -1,6 +1,6 @@
 set(LIB_NAME "dummy")
 set(UUID "a7a3bc9d-9afb-443b-89d8-133c8584429c")
 set(HEADERS)
-set(SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/dummy.c")
+set(SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/dummy.cpp")
 
 DECLARE_LIB(${LIB_NAME} ${UUID} "${HEADERS}" "${SOURCES}" "" "")

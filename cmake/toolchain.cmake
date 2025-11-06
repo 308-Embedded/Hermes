@@ -10,7 +10,7 @@ set(CMAKE_RANLIB "${COMPILER_PATH}/llvm-ranlib")
 set(CMAKE_NM "${COMPILER_PATH}/llvm-nm")
 set(CMAKE_ASM_COMPILER "${COMPILER_PATH}/clang")
 
-set(COMMON_CLANG_FLAGS "--target=${TARGET_ARCH} --sysroot=${CMAKE_SYSROOT} -rtlib=compiler-rt")
+set(COMMON_CLANG_FLAGS "--target=${TARGET_ARCH} --sysroot=${CMAKE_SYSROOT} -rtlib=compiler-rt -I${CMAKE_SYSROOT}/include/c++/v1")
 set(CMAKE_LIBRARY_PATH "${CMAKE_SYSROOT}/lib")
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${COMMON_CLANG_FLAGS}")
